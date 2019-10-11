@@ -1,0 +1,28 @@
+<html>
+  <head> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="container">
+      <div id="app"></div>
+    </section>
+
+    <section class="controls">
+      <p>press any key to pause</p>
+      <ebsi-slider label="Separation" id="separation" min="0" max="1" step="0.01"></ebsi-slider>
+      <ebsi-slider label="Alignment" id="alignment" min="0" max="1" step="0.01"></ebsi-slider>
+      <ebsi-slider label="Cohesion" id="cohesion" min="0" max="1" step="0.01"></ebsi-slider>
+      <ebsi-slider label="Perception" id="perception" min="0" max="100"></ebsi-slider>
+      <ebsi-slider label="Jitter" id="jitter" min="0" max="1" step="0.01"></ebsi-slider>
+      <ebsi-slider label="Hue" id="hue-offset" min="0" max="360" step="1"></ebsi-slider>
+      <ebsi-toggle label="Show Perception" id="show-perception"></ebsi-toggle>
+      <ebsi-toggle label="Show Neighbor Connections" id="show-neighbors"></ebsi-toggle>
+      <ebsi-toggle label="Show Velocity" id="show-velocity"></ebsi-toggle>
+      <ebsi-dropdown label="Shape" id="shape"></ebsi-dropdown>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="/controls/index.js" defer></script>
+  </body>
+</html>

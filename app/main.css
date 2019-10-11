@@ -1,0 +1,11 @@
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.controls {
+  padding: 2rem;
+}
